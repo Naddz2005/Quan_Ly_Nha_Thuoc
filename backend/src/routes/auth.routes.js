@@ -1,13 +1,8 @@
 const express = require("express");
+
 const authController = require("../controllers/auth.controller");
 const authMiddleware = require("../middlewares/auth.middleware");
-
-console.log("authController =", authController);
-console.log("authController.login =", authController.login);
-console.log("authController.register =", authController.register);
-console.log("authController.me =", authController.me);
-console.log("authController.changePassword =", authController.changePassword);
-console.log("authMiddleware =", authMiddleware);
+const nhanVienController = require("../controllers/nhanVien.controller");
 
 const router = express.Router();
 
